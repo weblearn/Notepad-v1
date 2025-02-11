@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Notepad App</h1>
+        <div class="note-form">
+            <input type="text" id="noteTitle" placeholder="Note Title">
+            <textarea id="noteContent" placeholder="Write your note here..."></textarea>
+            <div class="image-input-container">
+                <input type="file" id="noteImage" accept="image/*">
+                <div id="imagePreview" class="image-preview"></div>
+            </div>
+            <button id="addNote">Add Note</button>
+            <button id="updateNote" style="display: none;">Update Note</button>
+        </div>
+        <div class="notes-container" id="notesContainer">
+            <!-- Notes will be added here dynamically -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
